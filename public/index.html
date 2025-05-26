@@ -1,12 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EcoDecora</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoDecora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="images/logo.jpeg" alt="Logo EcoDecora" class="logoImage">
+        <h1>EcoDecora</h1>
+      </div>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#produto">Produto</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <!-- Paralax -->
+    <div class="bgimage" style="background-image: url('images/Scene 6.jpg')"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="sobre">
+      <div>
+        <h2>Decoração Sustentável e Bem-Estar</h2>
+        <p>
+          Produtos artesanais que unem design inovador, aromaterapia e sustentabilidade para transformar seu ambiente.
+        </p>
+        <button class="ctaButton" id="openModal">Conheça a EcoDecora</button>
+      </div>
+      <div>
+        <img src="images/Scene 5.jpg" alt="Kit Velas Suculentas" style="max-width: 100%; border-radius: 10px;">
+      </div>
+    </section>
+
+    <!-- Modal de Vídeo (inicialmente escondido) -->
+    <div class="modalOverlay" id="modal" style="display: none;">
+      <div class="modalContent">
+        <button class="modalCloseButton" id="closeModal">×</button>
+        <video controls autoplay class="modalVideo" src="videos/apresentacao-ecodecora.mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+    </div>
+
+    <!-- Missão, Visão e Valores -->
+    <section class="features" id="missao">
+      <div class="featureCard">
+        <h3>Missão</h3>
+        <p>
+          Oferecer produtos decorativos sustentáveis que unem beleza, aroma e consciência ambiental, proporcionando bem-estar aos clientes.
+        </p>
+      </div>
+      <div class="featureCard">
+        <h3>Visão</h3>
+        <p>
+          Ser referência em decoração sustentável e inovadora, reconhecida pela qualidade e responsabilidade ambiental.
+        </p>
+      </div>
+      <div class="featureCard">
+        <h3>Valores</h3>
+        <p>
+          Sustentabilidade, inovação, qualidade, respeito ao meio ambiente e compromisso com o cliente.
+        </p>
+      </div>
+    </section>
+
+    <!-- Produto Destaque -->
+    <section class="sustainability" id="produto">
+      <h2>Produto Destaque</h2>
+      <p>
+        Kit de velas aromáticas artesanais em formato de suculentas, plantadas em vasinhos de gesso reciclável, com embalagem e etiquetas em papel kraft com informações e dicas.
+      </p>
+      <img src="images/Jardim Aromatizado - produto principal.png" alt="Kit Velas Suculentas" class="produtoDestaque">
+    </section>
+
+    <!-- Sustentabilidade -->
+    <section class="features" id="sustentabilidade">
+      <div class="featureCard">
+        <h3>Materiais Sustentáveis</h3>
+        <p>Vasinhos de gesso reciclável, biodegradáveis e reutilizáveis.</p>
+      </div>
+      <div class="featureCard">
+        <h3>Embalagens Ecológicas</h3>
+        <p>Embalagens e etiquetas em papel kraft reciclável.</p>
+      </div>
+      <div class="featureCard">
+        <h3>Compromisso Ambiental</h3>
+        <p>Uso de fornecedores locais e materiais de baixo impacto para minimizar a pegada ambiental.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+      <p>© 2025 EcoDecora. Todos os direitos reservados.</p>
+      <p>Contato: contato@ecodecora.com | (51) 99472-4741</p>
+    </footer>
+  </div>
+
+  <script>
+    // Abre o modal
+    document.getElementById('openModal').addEventListener('click', function() {
+      document.getElementById('modal').style.display = 'flex';
+    });
+    // Fecha o modal
+    document.getElementById('closeModal').addEventListener('click', function() {
+      document.getElementById('modal').style.display = 'none';
+    });
+  </script>
+</body>
 </html>
