@@ -1,5 +1,5 @@
-# Exerc03_Fullstack_LandingPage
+Feira empreendedora - Tecnico informática
 
 Bem-vindo ao meu projeto!
 
-A página principal do projeto pode ser acessada diretamente [aqui](https://mrnicolait.github.io/Exerc03_Fullstack_LandingPage/)
+A página principal do projeto pode ser acessada diretamente 
