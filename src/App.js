@@ -26,7 +26,7 @@ function App() {
       {/* Paralax */}
       <div
         className={styles.bgimage}
-        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/scene6.jpg)` }}
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/Scene6.jpg)` }}
       ></div>
 
       {/* Hero Section */}
