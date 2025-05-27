@@ -26,7 +26,7 @@ function App() {
       {/* Paralax */}
       <div
         className={styles.bgimage}
-        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/Scene6.jpg)` }}
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/scene6.jpg)` }}
       ></div>
 
       {/* Hero Section */}
@@ -45,7 +45,7 @@ function App() {
         </div>
         <div>
           <img
-            src={`${process.env.PUBLIC_URL}/images/Scene 5.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/scene5.jpg`}
             alt="Kit Velas Suculentas"
             style={{ maxWidth: '100%', borderRadius: '10px' }}
           />
@@ -103,7 +103,7 @@ function App() {
           Kit de velas aromáticas artesanais em formato de suculentas, plantadas em vasinhos de gesso reciclável, com embalagem e etiquetas em papel kraft com informações e dicas.
         </p>
         <img
-          src={`${process.env.PUBLIC_URL}/images/Jardim Aromatizado - produto principal.png`}
+          src={`${process.env.PUBLIC_URL}/images/jardim-aromatizado-produto-principal.png`}
           alt="Kit Velas Suculentas"
           className={styles.produtoDestaque}
         />
