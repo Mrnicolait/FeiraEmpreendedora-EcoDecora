@@ -9,7 +9,7 @@ function App() {
       <header className={styles.header}>
         <div className={styles.logo}>
           <img
-            src="images/logo.jpeg"
+            src={`${process.env.PUBLIC_URL}/images/logo.jpeg`}
             alt="Logo EcoDecora"
             className={styles.logoImage}
           />
@@ -26,7 +26,7 @@ function App() {
       {/* Paralax */}
       <div
         className={styles.bgimage}
-        style={{ backgroundImage: "url('images/Scene 6.jpg')" }}
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/Scene6.jpg)` }}
       ></div>
 
       {/* Hero Section */}
@@ -45,7 +45,7 @@ function App() {
         </div>
         <div>
           <img
-            src="images/Scene 5.jpg"
+            src={`${process.env.PUBLIC_URL}/images/Scene 5.jpg`}
             alt="Kit Velas Suculentas"
             style={{ maxWidth: '100%', borderRadius: '10px' }}
           />
@@ -66,7 +66,7 @@ function App() {
               controls
               autoPlay
               className={styles.modalVideo}
-              src="videos/apresentacao-ecodecora.mp4"
+              src={`${process.env.PUBLIC_URL}/videos/apresentacao-ecodecora.mp4`}
             >
               Seu navegador não suporta vídeo HTML5.
             </video>
@@ -103,7 +103,7 @@ function App() {
           Kit de velas aromáticas artesanais em formato de suculentas, plantadas em vasinhos de gesso reciclável, com embalagem e etiquetas em papel kraft com informações e dicas.
         </p>
         <img
-          src="images/Jardim Aromatizado - produto principal.png"
+          src={`${process.env.PUBLIC_URL}/images/Jardim Aromatizado - produto principal.png`}
           alt="Kit Velas Suculentas"
           className={styles.produtoDestaque}
         />
