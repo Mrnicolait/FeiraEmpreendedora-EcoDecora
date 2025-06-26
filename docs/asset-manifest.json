@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/FeiraEmpreendedora-EcoDecora/static/css/main.3a2455c1.css",
-    "main.js": "/FeiraEmpreendedora-EcoDecora/static/js/main.766ad924.js",
+    "main.css": "/FeiraEmpreendedora-EcoDecora/static/css/main.bb811e8e.css",
+    "main.js": "/FeiraEmpreendedora-EcoDecora/static/js/main.90e8c900.js",
     "index.html": "/FeiraEmpreendedora-EcoDecora/index.html",
-    "main.3a2455c1.css.map": "/FeiraEmpreendedora-EcoDecora/static/css/main.3a2455c1.css.map",
-    "main.766ad924.js.map": "/FeiraEmpreendedora-EcoDecora/static/js/main.766ad924.js.map"
+    "main.bb811e8e.css.map": "/FeiraEmpreendedora-EcoDecora/static/css/main.bb811e8e.css.map",
+    "main.90e8c900.js.map": "/FeiraEmpreendedora-EcoDecora/static/js/main.90e8c900.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a2455c1.css",
-    "static/js/main.766ad924.js"
+    "static/css/main.bb811e8e.css",
+    "static/js/main.90e8c900.js"
   ]
 }
