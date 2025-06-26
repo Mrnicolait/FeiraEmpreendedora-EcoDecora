@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Loja from './Loja';
 import styles from './App.module.css';
 
-function App() {
-  const [showVideoModal, setShowVideoModal] = useState(false);
-
+function Home({ setShowVideoModal, showVideoModal }) {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -20,6 +20,7 @@ function App() {
           <a href="#produto">Produto</a>
           <a href="#sustentabilidade">Sustentabilidade</a>
           <a href="#contato">Contato</a>
+          <Link to="/loja">Loja</Link>
         </nav>
       </header>
 
@@ -52,8 +53,8 @@ function App() {
         </div>
       </section>
 
-       {/* Modal de Vídeo */}
-       {showVideoModal && (
+      {/* Modal de Vídeo */}
+      {showVideoModal && (
         <div className={styles.modalOverlay}>
           <div className={styles.modalContent}>
             <button
@@ -130,13 +131,28 @@ function App() {
         <p>© 2025 EcoDecora. Todos os direitos reservados.</p>
         <p>Contato: contato@ecodecora.com | (51) 99472-4741</p>
       </footer>
-
-     
     </div>
   );
 }
 
+function App() {
+  const [showVideoModal, setShowVideoModal] = useState(false);
+
+  return (
+    <Router basename="/FeiraEmpreendedora-EcoDecora">
+      <Routes>
+        <Route
+          path="/"
+          element={<Home setShowVideoModal={setShowVideoModal} showVideoModal={showVideoModal} />}
+        />
+        <Route path="/loja" element={<Loja />} />
+      </Routes>
+    </Router>
+  );
+}
+
 export default App;
+
 
 
 

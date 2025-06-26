@@ -1,0 +1,117 @@
+.pedidoContainer {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.titulo {
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.produtoInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.produtoFoto {
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.produtoNome {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-green);
+}
+
+.produtoPreco {
+  font-size: 1.2rem;
+  color: var(--primary-green);
+}
+
+.pedidoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.inputQuantidade {
+  width: 100px;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--secondary-green);
+  border-radius: 8px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.inputQuantidade:focus {
+  border-color: var(--primary-green);
+}
+
+.valorTotal {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--primary-green);
+  margin-top: 1rem;
+}
+
+.botaoEnviar {
+  background-color: var(--primary-green);
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1.5rem;
+}
+
+.botaoEnviar:hover {
+  background-color: #27632a;
+}
+
+.voltarContainer {
+  margin-top: 2rem;
+}
+
+.linkVoltar {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.linkVoltar:hover {
+  color: var(--secondary-green);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .pedidoContainer {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .produtoFoto {
+    max-width: 100%;
+  }
+
+  .inputQuantidade {
+    width: 80px;
+  }
+}
+
