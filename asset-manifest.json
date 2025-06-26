@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FeiraEmpreendedora-EcoDecora/static/css/main.bb811e8e.css",
+    "main.js": "/FeiraEmpreendedora-EcoDecora/static/js/main.90e8c900.js",
+    "index.html": "/FeiraEmpreendedora-EcoDecora/index.html",
+    "main.bb811e8e.css.map": "/FeiraEmpreendedora-EcoDecora/static/css/main.bb811e8e.css.map",
+    "main.90e8c900.js.map": "/FeiraEmpreendedora-EcoDecora/static/js/main.90e8c900.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb811e8e.css",
+    "static/js/main.90e8c900.js"
+  ]
+}
